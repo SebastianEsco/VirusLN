@@ -13,9 +13,9 @@ public class WebGLVideoFix : MonoBehaviour
         videoPlayer.prepareCompleted += (v) =>
         {
             v.time = 0;
-            v.Play();
         };
 #else
+        videoPlayer.Prepare();
         videoPlayer.time = 0;
 #endif
     }
